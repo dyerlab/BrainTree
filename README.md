@@ -5,21 +5,21 @@ A native SwiftUI iOS app for capturing, browsing, and querying a personal knowle
 ## Interface
 
 ### Feed
-![https://www.flickr.com/photo_download.gne?id=55172726252&secret=12e9eecf2e&size=z&source=photoPageEngagement]
+![Main Feed Interface](https://www.flickr.com/photo_download.gne?id=55172726252&secret=12e9eecf2e&size=z&source=photoPageEngagement)
 
 ### Query
-![https://www.flickr.com/photo_download.gne?id=55172726247&secret=ced965e2b2&size=z&source=photoPageEngagement]
-![https://www.flickr.com/photo_download.gne?id=55173791693&secret=6a8d5d0cd8&size=z&source=photoPageEngagement]
-![https://www.flickr.com/photo_download.gne?id=55174013450&secret=a08e68086a&size=z&source=photoPageEngagement]
+![Full Query](https://www.flickr.com/photo_download.gne?id=55172726247&secret=ced965e2b2&size=z&source=photoPageEngagement)
+![App Links to Original Editor](https://www.flickr.com/photo_download.gne?id=55173791693&secret=6a8d5d0cd8&size=z&source=photoPageEngagement)
+![AI Summary](https://www.flickr.com/photo_download.gne?id=55174013450&secret=a08e68086a&size=z&source=photoPageEngagement)
 
 ### Capture
-![https://www.flickr.com/photo_download.gne?id=55174013460&secret=50dcfea13a&size=z&source=photoPageEngagement]
+![Capture Thoughts](https://www.flickr.com/photo_download.gne?id=55174013460&secret=50dcfea13a&size=z&source=photoPageEngagement)
 
 ### Settings
-![https://www.flickr.com/photo_download.gne?id=55173625411&secret=306e715bbb&size=z&source=photoPageEngagement]
+![Settings](https://www.flickr.com/photo_download.gne?id=55173625411&secret=306e715bbb&size=z&source=photoPageEngagement)
 
 ### Widget
-![https://www.flickr.com/photo_download.gne?id=55172732157&secret=d8c2a4f3d7&size=c&source=photoPageEngagement]
+![iOS Widget](https://www.flickr.com/photo_download.gne?id=55172732157&secret=d8c2a4f3d7&size=c&source=photoPageEngagement)
 
 
 ## What it does
