@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct AskView: View {
+    @FocusState private var queryFocused: Bool
     @State private var query = ""
     @State private var tagFilter = ""
     @State private var typeFilter = ""
@@ -23,6 +24,7 @@ struct AskView: View {
                 HStack {
                     TextField("Ask your notes…", text: $query)
                         .textFieldStyle(.roundedBorder)
+                        .focused($queryFocused)
                         .onSubmit { Task { await search() } }
                     Button {
                         withAnimation { showFilters.toggle() }
@@ -121,6 +123,25 @@ struct AskView: View {
                 }
             }
             .navigationTitle("Ask")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        withAnimation {
+                            query = ""
+                            tagFilter = ""
+                            typeFilter = ""
+                            showFilters = false
+                            synthesis = nil
+                            results = []
+                            rawResponse = ""
+                            error = nil
+                        }
+                    } label: {
+                        Image(systemName: "xmark.circle")
+                    }
+                    .disabled(query.isEmpty && tagFilter.isEmpty && typeFilter.isEmpty && synthesis == nil && results.isEmpty)
+                }
+            }
         }
     }
 
@@ -130,6 +151,7 @@ struct AskView: View {
         let type = typeFilter.trimmingCharacters(in: .whitespaces)
         guard !q.isEmpty || !tag.isEmpty || !type.isEmpty else { return }
 
+        queryFocused = false
         isSearching = true
         synthesis = nil
         results = []
